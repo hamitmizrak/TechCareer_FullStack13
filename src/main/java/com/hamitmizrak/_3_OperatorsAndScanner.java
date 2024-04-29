@@ -22,5 +22,18 @@ public class _3_OperatorsAndScanner {
         System.out.println("\nLütfen İsminizi Giriniz");
         String name=klavye.nextLine();
         System.out.println("Adınız: "+name);
+
+        // Math
+        // String
+        // Conditional
+        // Date
+        // Loop
+        // Exception Handling
+        // Array
+        // Collection
+        // OOP
+        // Inheritance
+        // Abstract
+        // interface
     }
 }
