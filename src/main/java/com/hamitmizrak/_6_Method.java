@@ -24,7 +24,7 @@ public class _6_Method {
     }
 
     // 4-) voisiz Parametreli
-    public static double  voidsizParametresiz(int x){
+    public static double  voidsizParametreli(int x){
         return  Math.pow(x,2);
     }
 
@@ -36,7 +36,7 @@ public class _6_Method {
         //int result=  voidsizParametresiz();
         //System.out.println("Sonuç: "+result);
 
-        double result2=  voidsizParametresiz(9);
+        double result2=  voidsizParametreli(9);
         System.out.println(result2);
     }
 }
