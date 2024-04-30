@@ -7,22 +7,22 @@ import java.util.Objects;
 // Bean=Pojo+Constructor
 public class Student {
     //Variable
-    private Long studentId;
+    private Long id;
     private String studentName;
     private String studentSurname;
     private Date createdDate;
 
     // Constructor (Parametresiz)
     public Student(){
-        studentId=0L;
+        id=0L;
         this.studentName="Adınızı girmediniz";
         this.studentSurname="Soydınızı girmediniz";
         createdDate=new Date(System.currentTimeMillis());
     }
 
     // Constructor (Parametreli)
-    public Student(Long studentId, String studentName, String studentSurname) {
-        this.studentId = studentId;
+    public Student(Long id, String studentName, String studentSurname) {
+        this.id = id;
         this.studentName = studentName;
         this.studentSurname = studentSurname;
     }
@@ -31,7 +31,7 @@ public class Student {
     @Override
     public String toString() {
         return "Student{" +
-                "studentId=" + studentId +
+                "id=" + id +
                 ", studentName='" + studentName + '\'' +
                 ", studentSurname='" + studentSurname + '\'' +
                 ", createdDate=" + createdDate +
@@ -44,29 +44,29 @@ public class Student {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
-        return Objects.equals(studentId, student.studentId) && Objects.equals(studentName, student.studentName) && Objects.equals(studentSurname, student.studentSurname) && Objects.equals(createdDate, student.createdDate);
+        return Objects.equals(id, student.id) && Objects.equals(studentName, student.studentName) && Objects.equals(studentSurname, student.studentSurname) && Objects.equals(createdDate, student.createdDate);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(studentId, studentName, studentSurname, createdDate);
+        return Objects.hash(id, studentName, studentSurname, createdDate);
     }
 
     // Method
     public String fullName(){
     StringBuilder stringBuilder=new StringBuilder();
-    stringBuilder.append(studentId).append(" ").append(studentName).append(" ").append(this.studentSurname);
+    stringBuilder.append(id).append(" ").append(studentName).append(" ").append(this.studentSurname);
     String change=stringBuilder.toString();
     return change;
     }
 
     // Getter and Setter
-    public Long getStudentId() {
-        return studentId;
+    public Long getId() {
+        return id;
     }
 
-    public void setStudentId(Long studentId) {
-        this.studentId = studentId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getStudentName() {
