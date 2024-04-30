@@ -144,8 +144,8 @@ public class _12_Collection {
 
     public static void main(String[] args)  {
         // Collection
-        //listData();
-        //setData();
-        mapData();
+        // listData();
+        // setData();
+        // mapData();
     }
 }
